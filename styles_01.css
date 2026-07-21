@@ -1,0 +1,222 @@
+:root {
+  --bg-1: #07163f;
+  --bg-2: #143d9b;
+  --surface: rgba(6, 18, 51, 0.72);
+  --line: rgba(255, 255, 255, 0.14);
+  --text: #f3f7ff;
+  --muted: #c5d6ff;
+  --accent: #ffbf38;
+  --accent-ink: #12224a;
+  --chip: rgba(36, 92, 221, 0.88);
+  --font: "Avenir Next", "Segoe UI", "Hiragino Sans", "Noto Sans KR",
+    "Apple SD Gothic Neo", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  min-height: 100%;
+}
+
+body {
+  font-family: var(--font);
+  color: var(--text);
+  background:
+    radial-gradient(circle at top right, rgba(37, 170, 255, 0.35), transparent 24rem),
+    linear-gradient(160deg, var(--bg-1), var(--bg-2));
+}
+
+a {
+  color: #8bd8ff;
+}
+
+a:hover {
+  color: var(--accent);
+}
+
+.page {
+  width: min(880px, calc(100% - 32px));
+  margin: 0 auto;
+  padding: 28px 0 48px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 28px;
+}
+
+.brand {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.brand-name {
+  font-size: 1.15rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+
+.brand-by {
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+
+.lang-switch {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+.lang-btn {
+  appearance: none;
+  border: 1px solid var(--line);
+  background: rgba(8, 20, 58, 0.55);
+  color: var(--muted);
+  font: inherit;
+  font-size: 0.82rem;
+  font-weight: 600;
+  padding: 8px 12px;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: background 0.15s ease, color 0.15s ease, border-color 0.15s ease;
+}
+
+.lang-btn:hover {
+  color: var(--text);
+  border-color: rgba(255, 255, 255, 0.28);
+}
+
+.lang-btn[aria-pressed="true"] {
+  background: var(--chip);
+  color: #fff;
+  border-color: transparent;
+}
+
+.hero {
+  padding: 36px 28px;
+  border: 1px solid var(--line);
+  border-radius: 28px;
+  background: linear-gradient(
+    180deg,
+    rgba(13, 29, 81, 0.86),
+    rgba(8, 20, 58, 0.76)
+  );
+  box-shadow: 0 18px 48px rgba(0, 0, 0, 0.24);
+}
+
+.eyebrow {
+  margin: 0 0 10px;
+  color: var(--accent);
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.hero h1 {
+  margin: 0 0 14px;
+  font-size: clamp(2.2rem, 5vw, 3.4rem);
+  line-height: 1.1;
+}
+
+.lead {
+  margin: 0 0 12px;
+  font-size: 1.15rem;
+  line-height: 1.65;
+  color: var(--text);
+  max-width: 38ch;
+}
+
+.sub {
+  margin: 0;
+  line-height: 1.65;
+  color: var(--muted);
+  max-width: 42ch;
+}
+
+.about {
+  margin-top: 22px;
+  padding: 24px 28px;
+  border-radius: 24px;
+  border: 1px solid var(--line);
+  background: var(--surface);
+}
+
+.about h2 {
+  margin: 0 0 16px;
+  font-size: 1.15rem;
+}
+
+.about-list {
+  margin: 0;
+  display: grid;
+  gap: 14px;
+}
+
+.about-list div {
+  display: grid;
+  gap: 4px;
+}
+
+.about-list dt {
+  font-size: 0.8rem;
+  color: var(--muted);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.about-list dd {
+  margin: 0;
+  font-size: 1.05rem;
+  font-weight: 600;
+}
+
+.footer {
+  margin-top: auto;
+  padding-top: 32px;
+  color: var(--muted);
+  font-size: 0.92rem;
+}
+
+.footer p {
+  margin: 0 0 8px;
+  line-height: 1.6;
+}
+
+.footer .sep {
+  margin: 0 8px;
+}
+
+@media (max-width: 560px) {
+  .header {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .hero,
+  .about {
+    padding: 24px 20px;
+  }
+
+  .footer .sep {
+    display: none;
+  }
+
+  .footer p:first-child {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+}

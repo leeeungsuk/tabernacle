@@ -14,6 +14,8 @@ Play Console에 제출할 조직 웹사이트 URL로 위 주소를 사용하세�
 - Contact: eslee0620@gmail.com
 - Privacy Policy: https://leeeungsuk.github.io/battle-rummy-policy/privacy-policy.html
 - Languages: Korean / English / Japanese (browser language + manual switch)
+- Visual assets under `images/` (logo, character, splash, store artwork)
+- Previous text-only page kept as `index_01.html` / `styles_01.css`
 
 ## Deploy (GitHub Pages)
 

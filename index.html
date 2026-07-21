@@ -8,41 +8,100 @@
       name="description"
       content="Official website for Battle Rummy by Tabernacle. Contact and company information."
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Exo+2:wght@500;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="./images/app_icon.png" type="image/png" />
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
-    <div class="page">
-      <header class="header">
-        <div class="brand">
-          <span class="brand-name">Battle Rummy</span>
-          <span class="brand-by" data-i18n="brandBy">by Tabernacle</span>
-        </div>
-        <nav class="lang-switch" aria-label="Language">
-          <button type="button" class="lang-btn" data-lang="ko" aria-pressed="false">
-            한국어
-          </button>
-          <button type="button" class="lang-btn" data-lang="en" aria-pressed="true">
-            English
-          </button>
-          <button type="button" class="lang-btn" data-lang="ja" aria-pressed="false">
-            日本語
-          </button>
-        </nav>
-      </header>
+    <header class="topbar">
+      <a class="topbar-brand" href="#top" aria-label="Battle Rummy">
+        <img src="./images/app_icon.png" alt="" width="40" height="40" />
+        <span>
+          <strong>Battle Rummy</strong>
+          <small data-i18n="brandBy">by Tabernacle</small>
+        </span>
+      </a>
+      <nav class="lang-switch" aria-label="Language">
+        <button type="button" class="lang-btn" data-lang="ko" aria-pressed="false">
+          한국어
+        </button>
+        <button type="button" class="lang-btn" data-lang="en" aria-pressed="true">
+          English
+        </button>
+        <button type="button" class="lang-btn" data-lang="ja" aria-pressed="false">
+          日本語
+        </button>
+      </nav>
+    </header>
 
-      <main>
-        <section class="hero">
-          <p class="eyebrow" data-i18n="eyebrow">Official site</p>
-          <h1 data-i18n="heroTitle">Battle Rummy</h1>
+    <main id="top">
+      <section class="hero" aria-labelledby="hero-heading">
+        <div class="hero-bg" aria-hidden="true"></div>
+        <div class="hero-glow" aria-hidden="true"></div>
+
+        <div class="hero-copy">
+          <p class="eyebrow">
+            <img src="./images/sword.png" alt="" width="28" height="22" />
+            <span data-i18n="eyebrow">Official site</span>
+          </p>
+          <h1 id="hero-heading" class="sr-only" data-i18n="heroTitle">Battle Rummy</h1>
+          <img
+            class="hero-logo"
+            src="./images/title_logo.png"
+            alt="Battle Rummy"
+            width="900"
+            height="400"
+          />
           <p class="lead" data-i18n="heroLead">
             A mobile rummy-style board game for solo AI practice and local Bluetooth battles.
           </p>
           <p class="sub" data-i18n="heroSub">
             Built for quick matches, clear rules, and play anytime with friends nearby.
           </p>
-        </section>
+        </div>
 
-        <section class="about" aria-labelledby="about-heading">
+        <div class="hero-figure">
+          <img
+            class="hero-character"
+            src="./images/hero_character.png"
+            alt=""
+            width="625"
+            height="720"
+          />
+        </div>
+      </section>
+
+      <section class="showcase" aria-label="Game highlights">
+        <figure class="shot">
+          <img
+            src="./images/feature_ai.png"
+            alt=""
+            width="288"
+            height="640"
+            loading="lazy"
+          />
+          <figcaption data-i18n="featureAi">AI practice modes</figcaption>
+        </figure>
+        <figure class="shot">
+          <img
+            src="./images/feature_bt.png"
+            alt=""
+            width="288"
+            height="640"
+            loading="lazy"
+          />
+          <figcaption data-i18n="featureBt">Bluetooth battles nearby</figcaption>
+        </figure>
+      </section>
+
+      <section class="about" aria-labelledby="about-heading">
+        <img class="about-icon" src="./images/app_icon.png" alt="" width="72" height="72" />
+        <div>
           <h2 id="about-heading" data-i18n="aboutTitle">Developer</h2>
           <dl class="about-list">
             <div>
@@ -56,24 +115,25 @@
               </dd>
             </div>
           </dl>
-        </section>
-      </main>
+        </div>
+      </section>
+    </main>
 
-      <footer class="footer">
-        <p>
-          <span data-i18n="footerCompany">Company: Tabernacle (터버너클)</span>
-          <span class="sep" aria-hidden="true">·</span>
-          <a href="mailto:eslee0620@gmail.com">eslee0620@gmail.com</a>
-        </p>
-        <p>
-          <a
-            href="https://leeeungsuk.github.io/battle-rummy-policy/privacy-policy.html"
-            data-i18n="privacyLink"
-            >Privacy Policy</a
-          >
-        </p>
-      </footer>
-    </div>
+    <footer class="footer">
+      <p>
+        <span data-i18n="footerCompany">Company: Tabernacle (터버너클)</span>
+        <span class="sep" aria-hidden="true">·</span>
+        <a href="mailto:eslee0620@gmail.com">eslee0620@gmail.com</a>
+      </p>
+      <p>
+        <a
+          href="https://leeeungsuk.github.io/battle-rummy-policy/privacy-policy.html"
+          data-i18n="privacyLink"
+          >Privacy Policy</a
+        >
+      </p>
+    </footer>
+
     <script src="./i18n.js"></script>
   </body>
 </html>

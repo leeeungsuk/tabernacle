@@ -11,6 +11,8 @@
         "A mobile rummy-style board game for solo AI practice and local Bluetooth battles.",
       heroSub:
         "Built for quick matches, clear rules, and play anytime with friends nearby.",
+      featureAi: "AI practice modes",
+      featureBt: "Bluetooth battles nearby",
       aboutTitle: "Developer",
       companyLabel: "Company",
       companyValue: "Tabernacle (터버너클)",
@@ -26,6 +28,8 @@
       heroLead:
         "AI 대국과 블루투스 근거리 대전을 지원하는 모바일 루미 스타일 보드게임입니다.",
       heroSub: "짧은 한 판, 명확한 규칙으로 언제든 친구와 함께 즐길 수 있습니다.",
+      featureAi: "AI 연습 모드",
+      featureBt: "블루투스 근거리 대전",
       aboutTitle: "개발사",
       companyLabel: "회사명",
       companyValue: "터버너클 (Tabernacle)",
@@ -41,6 +45,8 @@
       heroLead:
         "AI対戦とBluetooth近距離対戦に対応した、モバイル向けラミースタイルのボードゲームです。",
       heroSub: "短い対局とわかりやすいルールで、いつでも近くの友達と遊べます。",
+      featureAi: "AI練習モード",
+      featureBt: "Bluetooth近距離対戦",
       aboutTitle: "開発者",
       companyLabel: "会社名",
       companyValue: "Tabernacle（ターバナクル）",
