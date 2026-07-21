@@ -4,9 +4,11 @@ Google Play Console 조직/사업자 계정용 공식 웹사이트입니다.
 
 ## Live URL
 
-https://leeeungsuk.github.io/tabernacle-website/
+https://leeeungsuk.github.io/tabernacle/
 
 Play Console에 제출할 조직 웹사이트 URL로 위 주소를 사용하세요.
+
+저장소: https://github.com/leeeungsuk/tabernacle
 
 ## Contents
 
@@ -19,7 +21,7 @@ Play Console에 제출할 조직 웹사이트 URL로 위 주소를 사용하세�
 
 ## Deploy (GitHub Pages)
 
-1. Push this repository to GitHub as `leeeungsuk/tabernacle-website` (public).
+1. Push this repository to GitHub as `leeeungsuk/tabernacle` (public).
 2. Settings → Pages → Build and deployment
 3. Source: Deploy from a branch
 4. Branch: `main` / folder: `/ (root)`
